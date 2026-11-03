@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8f3">
+    <meta
+        name="description"
+        content="Contatta CESAR GREEN per informazioni sulle nostre soluzioni di protezione digitale."
+    >
+
+    <title>Contacts — CESAR GREEN</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body class="page-contacts">
+
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <!-- NAVIGATION -->
+
+    <header class="site-header">
+
+        <a href="index.html" class="brand" aria-label="CESAR GREEN Home">
+      <img src="assets/logo.png" alt="CESAR GREEN">
+    </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html" data-i18n="navAbout">
+                About
+            </a>
+
+            <a href="products.html" data-i18n="navProducts">
+                Products
+            </a>
+
+            <a
+                href="contacts.html"
+                class="active"
+                aria-current="page"
+                data-i18n="navContacts"
+            >
+                Contacts
+            </a>
+        </nav>
+
+        <button
+            id="lang"
+            class="lang"
+            type="button"
+            aria-label="Switch language"
+        >
+            EN <span>↗</span>
+        </button>
+
+    </header>
+
+    <main>
+
+        <!-- CONTACT INTRO -->
+
+        <section class="leaf-contact-intro section">
+
+            <div class="reveal">
+
+                <span
+                    class="eyebrow"
+                    data-i18n="contactsPageEyebrow"
+                >
+                    ENTRIAMO IN CONTATTO
+                </span>
+
+                <h1 data-i18n-html="contactsPageTitle">
+                    Ogni connessione<br>
+                    <em>inizia da qui.</em>
+                </h1>
+
+                <p
+                    class="lead"
+                    data-i18n="contactsPageIntro"
+                >
+                    Hai una domanda, un progetto o vuoi approfondire
+                    le nostre tecnologie? Compila il modulo e
+                    prepara il tuo messaggio.
+                </p>
+
+            </div>
+
+            <div class="leaf-intro-caption" aria-hidden="true">
+                <span class="leaf-caption-line"></span>
+                NATURE INSPIRES CONNECTION
+            </div>
+
+        </section>
+
+        <!-- THE LEAF FORM -->
+
+        <section class="leaf-contact-section section">
+
+            <div class="leaf-stage">
+
+                <div class="leaf-aura" aria-hidden="true"></div>
+
+                <!-- Decorative leaf surface -->
+
+                <div class="form-leaf" aria-hidden="true">
+
+                    <svg
+                        class="form-leaf-veins"
+                        viewBox="0 0 1200 1450"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            class="leaf-main-vein"
+                            d="M 145 1320 C 350 1040, 710 650, 1060 95"
+                        />
+
+                        <path
+                            class="leaf-secondary-vein"
+                            d="M 390 1020 C 310 850, 235 700, 120 620"
+                        />
+
+                        <path
+                            class="leaf-secondary-vein"
+                            d="M 515 875 C 700 890, 850 820, 1010 680"
+                        />
+
+                        <path
+                            class="leaf-secondary-vein"
+                            d="M 650 700 C 545 520, 420 410, 310 360"
+                        />
+
+                        <path
+                            class="leaf-secondary-vein"
+                            d="M 785 505 C 940 510, 1050 430, 1120 320"
+                        />
+
+                        <path
+                            class="leaf-secondary-vein"
+                            d="M 925 280 C 840 185, 760 140, 660 115"
+                        />
+                    </svg>
+
+                </div>
+
+                <!-- Form content -->
+
+                <div class="leaf-form-content reveal">
+
+                    <div class="leaf-form-heading">
+
+                        <span class="leaf-form-index">
+                            CESAR GREEN / CONTACT
+                        </span>
+
+                        <h2 data-i18n-html="contactSideTitle">
+                            Le idee migliori<br>
+                            <em>nascono insieme.</em>
+                        </h2>
+
+                        <p data-i18n="contactSideText">
+                            Raccontaci la tua esigenza. Saremo felici
+                            di approfondire come le soluzioni
+                            CESAR GREEN possono inserirsi
+                            nel tuo contesto.
+                        </p>
+
+                    </div>
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="field">
+
+                                <label
+                                    for="firstName"
+                                    data-i18n="firstName"
+                                >
+                                    Nome *
+                                </label>
+
+                                <input
+                                    id="firstName"
+                                    name="firstName"
+                                    type="text"
+                                    autocomplete="given-name"
+                                    maxlength="100"
+                                    required
+                                    data-i18n-placeholder="firstNamePlaceholder"
+                                    placeholder="Il tuo nome"
+                                >
+
+                            </div>
+
+                            <div class="field">
+
+                                <label
+                                    for="lastName"
+                                    data-i18n="lastName"
+                                >
+                                    Cognome *
+                                </label>
+
+                                <input
+                                    id="lastName"
+                                    name="lastName"
+                                    type="text"
+                                    autocomplete="family-name"
+                                    maxlength="100"
+                                    required
+                                    data-i18n-placeholder="lastNamePlaceholder"
+                                    placeholder="Il tuo cognome"
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="field">
+
+                                <label
+                                    for="email"
+                                    data-i18n="emailLabel"
+                                >
+                                    Email *
+                                </label>
+
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    maxlength="254"
+                                    required
+                                    placeholder="nome@azienda.com"
+                                >
+
+                            </div>
+
+                            <div class="field">
+
+                                <label
+                                    for="company"
+                                    data-i18n="companyLabel"
+                                >
+                                    Azienda
+                                </label>
+
+                                <input
+                                    id="company"
+                                    name="company"
+                                    type="text"
+                                    autocomplete="organization"
+                                    maxlength="150"
+                                    data-i18n-placeholder="companyPlaceholder"
+                                    placeholder="Nome azienda"
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+
+                            <label
+                                for="subject"
+                                data-i18n="subjectLabel"
+                            >
+                                Argomento *
+                            </label>
+
+                            <select
+                                id="subject"
+                                name="subject"
+                                required
+                            >
+
+                                <option
+                                    value=""
+                                    data-i18n="subjectChoose"
+                                >
+                                    Seleziona un argomento
+                                </option>
+
+                                <option
+                                    value="general"
+                                    data-i18n="subjectGeneral"
+                                >
+                                    Informazioni generali
+                                </option>
+
+                                <option
+                                    value="image"
+                                    data-i18n="subjectImage"
+                                >
+                                    Cifratura tramite immagine
+                                </option>
+
+                                <option
+                                    value="usb"
+                                    data-i18n="subjectUsb"
+                                >
+                                    Dispositivo hardware USB
+                                </option>
+
+                                <option
+                                    value="business"
+                                    data-i18n="subjectBusiness"
+                                >
+                                    Collaborazioni commerciali
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="field">
+
+                            <label
+                                for="message"
+                                data-i18n="messageLabel"
+                            >
+                                Messaggio *
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                maxlength="5000"
+                                required
+                                data-i18n-placeholder="messagePlaceholder"
+                                placeholder="Raccontaci come possiamo aiutarti..."
+                            ></textarea>
+
+                        </div>
+
+                        <p
+                            class="form-note"
+                            data-i18n="formNote"
+                        >
+                            Il modulo apre il tuo programma email.
+                            Nessun messaggio viene inviato
+                            automaticamente dal sito.
+                        </p>
+
+                        <div class="form-actions">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit"
+                            >
+                                <span data-i18n="sendEmail">
+                                    Prepara email
+                                </span>
+                                <span aria-hidden="true">↗</span>
+                            </button>
+
+                            <button
+                                class="btn btn-secondary"
+                                type="button"
+                                id="gmailButton"
+                            >
+                                <span data-i18n="openGmail">
+                                    Apri con Gmail
+                                </span>
+                                <span aria-hidden="true">↗</span>
+                            </button>
+
+                        </div>
+
+                        <p
+                            id="formStatus"
+                            class="form-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+                <div class="leaf-stage-caption" aria-hidden="true">
+                    <span>01 — WRITE YOUR MESSAGE</span>
+                    <span>GROW A CONNECTION — 02</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <a href="index.html" class="brand" aria-label="CESAR GREEN Home">
+      <img src="assets/logo.png" alt="CESAR GREEN">
+    </a>
+
+        <p data-i18n="footerTag">
+            Security, by Nature.
+        </p>
+
+        <span>
+            © <span id="year"></span> CESAR GREEN
+        </span>
+        <span>© </span> P.IVA: 18516331008</span>
+    <span>© </span> Via Giovanni da Empoli 3 00154 Roma (RM)</span>
+
+        <a href="index.html" data-i18n="backTop">
+            Torna alla Home ↑
+        </a>
+
+    </footer>
+
+</body>
+</html>
